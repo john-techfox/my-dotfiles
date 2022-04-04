@@ -1,0 +1,49 @@
+" set the runtime path to include Vundle and initialize
+" set rtp+=~/.vim/bundle/Vundle.vim
+
+" let g:deoplete#enable_at_startup = 1
+
+Plug 'vim-ruby/vim-ruby'
+Plug 'tpope/vim-rails'
+Plug 'Shougo/neocomplete.vim'
+Plug 'tpope/vim-commentary'
+Plug 'w0rp/ale'
+
+noremap \ :Commentary<CR>
+autocmd FileType ruby setlocal commentstring=#\ %s
+
+nmap <LEADER>af :ALEFix<CR>
+filetype plugin indent on    " required
+filetype plugin on
+
+syntax on
+
+autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2
+autocmd FileType eruby setlocal expandtab shiftwidth=2 tabstop=2
+
+" allow vim to jump through directories for ctags
+set tags=tags;/
+
+"Neocomplete configurations
+let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_smart_case = 1
+
+let g:ale_lint_on_text_changed = 1
+let g:ale_lint_on_save = 1
+let g:ale_set_loclist = 1
+
+let g:ale_fixers = {
+\  'ruby': [
+\    'remove_trailing_lines',
+\    'trim_whitespace',
+\    'rubocop'
+\  ]
+\}
+let g:ale_linters = {'ruby': ['rubocop', 'ruby']}
+let g:ale_ruby_rubocop_executable = 'bin/rubocop'
+let g:ruby_indent_assignment_style = 'variable'
+
+" vim-ruby
+let g:ruby_indent_access_modifier_style = 'normal'
+let g:ruby_indent_assignment_style = 'variable'
+let g:ruby_indent_block_style = 'do'

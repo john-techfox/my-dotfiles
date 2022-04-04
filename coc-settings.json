@@ -1,0 +1,18 @@
+{
+  "tsserver.implicitProjectConfig.experimentalDecorators": true,
+  "snippets.ultisnips.usePythonx": false,
+  "eslint.autoFixOnSave": true,
+  "eslint.filetypes": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "prettier.disableSuccessMessage": true,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "json",
+    "javascript.tsx",
+    "graphql"
+  ],
+  "tsserver.formatOnType": true,
+  "coc.preferences.formatOnType": true
+}
