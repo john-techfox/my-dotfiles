@@ -1,0 +1,38 @@
+call plug#begin('~/.vim/bundle')
+
+" Define bundles via Github repos
+Plug 'itchyny/lightline.vim'
+Plug 'tpope/vim-surround'
+Plug 'alvan/vim-closetag'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
+Plug 'scrooloose/nerdcommenter'
+Plug 'easymotion/vim-easymotion'
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'dracula/vim'
+Plug 'honza/vim-snippets'
+Plug 'ervandew/supertab'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'modille/groovy.vim'
+Plug 'mattn/emmet-vim'
+Plug 'dart-lang/dart-vim-plugin'
+Plug 'ryanoasis/vim-devicons'
+
+" Flutter Plugin
+Plug 'dart-lang/dart-vim-plugin'
+Plug 'thosakwe/vim-flutter'
+
+
+" Vim plugin setup for rails
+Plug 'vim-ruby/vim-ruby'
+Plug 'tpope/vim-rails'
+Plug 'Shougo/neocomplete.vim'
+Plug 'tpope/vim-commentary'
+Plug 'w0rp/ale'
+
+call plug#end()

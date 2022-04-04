@@ -75,8 +75,8 @@ if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
   syntax on
 endif
 
-if filereadable(expand("~/.vimrc.bundles"))
-  source ~/.vimrc.bundles
+if filereadable(expand(".vimrc.bundles"))
+  source .vimrc.bundles
 endif
 
 augroup vimrcEx
@@ -236,10 +236,14 @@ let g:jsx_ext_required = 0
 
 " Local config
 if filereadable($HOME . "/.vimrc.local")
-  source ~/.vim/framework-setup/.vimrc.rails
+  source ~/.vimrc.local
 endif
 
-if filereadable("~/.vim/framework-setup/.vimrc.rails")
-  source ~/.vim/framework-setup/.vimrc.rails
+if filereadable(expand("framework-setup/.vimrc.rails"))
+  source framework-setup/.vimrc.rails
+endif
+
+if filereadable(expand("framework-setup/.vimrc.flutter"))
+  source framework-setup/.vimrc.flutter
 endif
 

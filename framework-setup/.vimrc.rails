@@ -3,12 +3,6 @@
 
 " let g:deoplete#enable_at_startup = 1
 
-Plug 'vim-ruby/vim-ruby'
-Plug 'tpope/vim-rails'
-Plug 'Shougo/neocomplete.vim'
-Plug 'tpope/vim-commentary'
-Plug 'w0rp/ale'
-
 noremap \ :Commentary<CR>
 autocmd FileType ruby setlocal commentstring=#\ %s
 
